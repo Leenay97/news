@@ -155,7 +155,7 @@ footer {
 	padding-top: 10px;
 	display: none;
 	padding-left: 25px;
-	
+	overflow-y: scroll;
 	box-sizing: border-box;
 	background-image: url('img/menu-bg.png');
 	background-repeat: repeat-x;

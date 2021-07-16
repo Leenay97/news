@@ -35,7 +35,7 @@ function time(){
 		};
 		console.log($menu);
 		});
-		$(window).resize(function(){
+		/*$(window).resize(function(){
 				if ($('body').width() >= 800) {
 					$menu = 1;
 					$('#menu-small').css('display', 'none');
@@ -52,5 +52,5 @@ function time(){
 					$('#menu-button').removeClass('menu-button-active');
 					$('#date-time-weather').css('display', 'flex');
 				};
-		});
+		});*/
 });

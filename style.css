@@ -176,10 +176,9 @@ footer {
 	background-image: url('img/search-small.png');
 	background-repeat-x: no-repeat;
 	border: 0;
-	width: 16px;
-	height: 16px;
+	width: 18px;
+	height: 18px;
 	margin-top: 5px;
-	background-position: center bottom;
 
 }
 #main {

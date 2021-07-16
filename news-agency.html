@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+	<title>Новостное агентство</title>
+</head>
+<body>
+<header>
+		<div id="header-top">
+			<div class="fixed-container" id="header-top-text">
+				<div>Самые <a href="#">свежие новости</a> в реальном времени
+				</div>
+				<div id="date-up"></div>
+			</div>
+		</div>
+		<div class="fixed-container" id="header-info">
+			<div>
+				<img src="img/logo.png">
+			</div>
+			<div id="city">
+				<select id="city-select">
+					<option>Москва</option>
+					<option>Иркутск</option>
+					<option>СПб</option>
+					<option>Тверь</option>
+					<option>Ростов</option>
+					<option>Самара</option>
+				</select>
+			</div>
+			<div class="header-time">
+			</div>
+			<div class="header-weather">
+				+45°C
+			</div>
+			<input id="search" placeholder="Поиск по сайту">
+		</div>
+		<div id="header-info-small">
+			<button id="menu-button" class="menu-button"></button>
+			<img src="img/logo-long.png">
+			<button id="search-button"></button>
+		</div>
+		<div id="date-time-weather">
+			<div id="header-date-small">
+				14 Июля, Ср
+			</div>
+			<div id="header-time-small">
+			</div>
+			<div id="header-weather-small">
+				+45°C
+			</div>
+		</div>
+		<div id="menu-small">
+				<div><a href="#">Главная</a></div>
+				<div><a href="#">Политика</a></div>
+				<div><a href="#">Общество</a></div>
+				<div><a href="#">Экономика</a></div>
+				<div><a href="#">В&nbsp;мире</a></div>
+				<div><a href="#">Происшествия</a></div>
+				<div><a href="#">Спорт</a></div>
+				<div><a href="#">Наука</a></div>
+				<div><a href="#">Туризм</a></div>
+		</div>
+		<menu class="fixed-container">
+				<a href="#" id="a1">Главная</a> /
+				<a href="#">Политика</a> /
+				<a href="#">Общество</a> /
+				<a href="#">Экономика</a> /
+				<a href="#">В&nbsp;мире</a> /
+				<a href="#">Происшествия</a> /
+				<a href="#">Спорт</a> /
+				<a href="#">Наука</a> /
+				<a href="#" id="a2">Туризм</a>
+		</menu>
+</header>
+<main>
+
+<div id="main" class="fixed-container">
+		<div id="left-container">
+			<div id="left-title">
+				<h1>Новости дня</h1>
+			</div>
+			<div class="left-unit">
+				Кот Ахилл предсказал
+				победу российской сборной
+				над Египтом на ЧМ-2018
+				<div class="left-unit-pref">
+					<a href="#">/ ЧМ по футболу</a>
+					<div class="left-unit-time">
+						14:08
+					</div>
+					<div class="left-unit-comments">
+						14
+					</div>
+				</div>
+			</div>
+			<div class="left-unit">
+				«Нафтогаз»: суд разрешил
+				заморозить активы «Газпрома»
+				в Великобритании
+				<div class="left-unit-pref">
+					<a href="#">/ Политика</a>
+					<div class="left-unit-time">
+						13:01
+					</div>
+					<div class="left-unit-comments">
+						17
+					</div>
+				</div>
+			</div>
+			<div class="left-unit">
+				В Москве назвали самое
+				популярное мороженое
+				у болельщиков ЧМ-2018
+				<div class="left-unit-pref">
+					<a href="#">/ Политика</a>
+					<div class="left-unit-time">
+						12:58
+					</div>
+					<div class="left-unit-comments">
+						7
+					</div>
+				</div>
+			</div>
+			<div class="left-unit">
+				Минтранс предписал
+				оборудовать общественный
+				транспорт кондиционерами
+				<div class="left-unit-pref">
+					<a href="#">/ Транспорт</a>
+					<div class="left-unit-time">
+						12:33
+					</div>
+					<div class="left-unit-comments">
+						11
+					</div>
+				</div>
+			</div>
+			<div class="left-unit">
+				Комплексное благоустройство
+				Щелковского шоссе завершится
+				в июне
+				<div class="left-unit-pref">
+					<a href="#">/ Транспорт</a>
+					<div class="left-unit-time">
+						11:08
+					</div>
+					<div class="left-unit-comments">
+						9
+					</div>
+				</div>
+			</div>
+			<div class="left-unit">
+				Летние кафе Москвы
+				временно закроются из-за
+				непогоды
+				<div class="left-unit-pref">
+					<a href="#">/ Погода</a>
+					<div class="left-unit-time">
+						10:18
+					</div>
+					<div class="left-unit-comments">
+						1
+					</div>
+				</div>
+			</div>
+			<div id="button-container">
+				<button id="all-news">Все новости</button>	
+			</div>
+		</div>
+		<div id="central-container">
+				<div id="central-main">
+					<a href="#"><img src="img/main-news.png"></a>
+					<a href="#" id="central-main-link">/ Политика</a>
+					<a href="#" id="central-main-text">В Крыму отреагировали на&nbsp;слова Кравчука
+					о возврате полуострова</a>
+					<div id="central-main-pref">
+						<div id="central-main-date">
+							7 Июля 2021
+						</div>
+						<div id="central-main-time">
+							22:20
+						</div>
+					</div>
+				</div>
+				<div class="central-news-unit">
+					<div><a href="#"><img src="img/naval.png"></a></div>
+					<a href="#" class="central-news-text">Алексей Навальный объявил
+					акцию против пенсионной
+					реформы 1 июля</a>
+						<div class="central-news-pref">
+							<a href="#" class="central-news-link">/ Политика</a>
+							<div class="central-news-time">
+								22:46
+							</div>
+							<div class="central-news-comments">
+								15
+							</div>
+						</div>
+				</div>
+				<div class="central-news-unit">
+					<a href="#"><img src="img/naval.png"></a>
+					<a href="#" class="central-news-text">Алексей Навальный объявил
+					акцию против пенсионной
+					реформы 1 июля</a>
+						<div class="central-news-pref">
+							<a href="#" class="central-news-link">/ Политика</a>
+							<div class="central-news-time">
+								22:46
+							</div>
+							<div class="central-news-comments">
+								15
+							</div>
+						</div>
+				</div>
+				<div class="central-news-unit">
+					<a href="#"><img src="img/naval.png"></a>
+					<a href="#" class="central-news-text">Алексей Навальный объявил
+					акцию против пенсионной
+					реформы 1 июля</a>
+						<div class="central-news-pref">
+							<a href="#" class="central-news-link">/ Политика</a>
+							<div class="central-news-time">
+								22:46
+							</div>
+							<div class="central-news-comments">
+								15
+							</div>
+						</div>
+				</div>
+				<div class="central-news-unit">
+					<a href="#"><img src="img/naval.png"></a>
+					<a href="#" class="central-news-text">Алексей Навальный объявил
+					акцию против пенсионной
+					реформы 1 июля</a>
+						<div class="central-news-pref">
+							<a href="#" class="central-news-link">/ Политика</a>
+							<div class="central-news-time">
+								22:46
+							</div>
+							<div class="central-news-comments">
+								15
+							</div>
+						</div>
+				</div>
+		</div>
+		<div id="right-container">
+			<div class="right-container-image">
+				<img src="img/banner-1.png">
+			</div>
+			<div class="right-container-image">
+				<img src="img/banner-2.png">
+			</div>
+		</div>
+		
+</div>
+<div id="special-container" class="fixed-container">
+	<div id="special-news-main">
+		<a href="#"><img src="img/special.png"></a>
+		<a href="#" id="special-news-main-link">/ Политика</a>
+		<a href="#" id="special-news-main-text">Пекин обвинил Вашингтон
+			в&nbsp;развязывании торговой
+			войны</a>
+		<div id="special-news-main-date">
+			8 Июля 2021
+		</div>
+		<div id="special-news-main-time">
+			23:33
+		</div>
+		<div id="special-news-main-small">
+			Министерство коммерции Китая заявило, что Пекин примет «качественные»
+			и «количественные» меры, если президент США Дональд Трамп введет
+			дополнительные пошлины на китайские товары
+		</div>
+	</div>
+			<div id="special-news">
+				<div id="special-news-title">
+					Самые читаемые новости
+				</div>
+				<div class="special-news-unit">
+					<a href="#" class="special-news-text">В Турции пообещали найти альтернативу из-за
+					отказа США поставить F-35</a>
+					<div class="special-news-pref">
+						<a href="#">/ Политика</a>
+						<div class="special-news-time">
+							11:50
+						</div>
+						<div class="special-news-comments">
+							11		
+						</div>
+					</div>
+					
+				</div>
+				<div class="special-news-unit">
+					<a href="#" class="special-news-text">Назван минимальный доход для причисления
+к среднему классу‍</a>
+					<div class="special-news-pref">
+						<a href="#">/ Политика</a>
+						<div class="special-news-time">
+							11:50
+						</div>
+						<div class="special-news-comments">
+							11		
+						</div>
+					</div>
+					
+				</div>
+				<div class="special-news-unit">
+					<a href="#" class="special-news-text">Назван минимальный доход для причисления
+к среднему классу‍</a>
+					<div class="special-news-pref">
+						<a href="#">/ Политика</a>
+						<div class="special-news-time">
+							11:50
+						</div>
+						<div class="special-news-comments">
+							11		
+						</div>
+					</div>
+					
+				</div>
+			</div>
+</div>
+</main>
+<footer>
+	<div id="footer-container" class="fixed-container">
+		<div id="footer-menu">
+			<ul>
+				<li><a href="#">Главная</a></li>
+				<li><a href="#">Политика</a></li>
+				<li><a href="#">Общество</a></li>
+				<li><a href="#">Экономика</a></li>
+				<li><a href="#">В мире</a></li>
+				<li><a href="#">Путешествия</a></li>
+				<li><a href="#">Спорт</a></li>
+				<li><a href="#">Наука</a></li>
+				<li><a href="#">Туризм</a></li>
+			</ul>
+		</div>
+		<div id="footer-center">
+			<img src="img/logo-dark.png">
+			<a href="#">Об агентстве</a>
+			<a href="#">Контакты</a>
+			<a href="#">Опубликовать новость</a>
+		</div>
+		<div id="footer-right">
+			<div id="footer-contacts">
+				<img src="img/vk.png">
+				<img src="img/facebook.png">
+				<img src="img/twitter.png">
+				<img src="img/instagram.png">
+			</div>
+			<div id="footer-number">
+				+7 (499) 995-55-55
+			</div>
+			<div id="footer-mail">
+				info@agency.ru
+			</div>
+		</div>
+	</div>
+	<div id="copyright">
+		© Новостное агентство, 2017-2018 
+все права защищены
+	</div>
+</footer>
+</body>
+</html>

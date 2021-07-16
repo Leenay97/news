@@ -175,6 +175,8 @@ footer {
 #search-button {
 	background-image: url('img/search-small.png');
 	background-repeat: no-repeat;
+	background-position: 0 0;
+  	background-attachment:fixed;
 	border: 0;
 	width: 16px;
 	height: 16px;
